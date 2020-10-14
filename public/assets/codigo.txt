@@ -1,0 +1,32 @@
+ //// css 
+
+  <link rel="stylesheet" href="{{asset('assets\air-datepicker\dist\css\datepicker.css')}}">
+
+
+// js
+
+   <script src="{{asset('assets\air-datepicker\dist\js\datepicker.js')}}"></script>
+    <script src="{{asset('assets\air-datepicker\dist\js\i18n\datepicker.es.js')}}"></script>
+
+//estudianteGrabar
+
+
+nota: esto va debajo de apellidos ustedes deben acomodarlo de manera que quede bonito
+
+
+
+  
+
+                      <div class="col">
+
+    <input type="text" class="datepicker-here"
+     name="fechaDeNacimiento"
+     data-language="es"
+    
+     />              
+
+migraciones
+
+php artisan make:migration add_campo --table=estudiantes 
+
+php artisan migrate

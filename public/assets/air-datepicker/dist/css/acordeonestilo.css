@@ -1,0 +1,94 @@
+.main-container{
+
+	width:600px;
+
+	margin:0 auto;
+
+	padding:20px;
+}
+
+.btn-itm-acordeon{
+
+	background:#005eb1;
+	display:block;
+	color:white;
+	padding:8px;
+	font-weight: bold;
+	border-bottom: 1px solid rgba(142,142,142,0.5);
+}
+.item-content-acordeon{
+
+
+	overflow:hidden;
+
+	max-height: 0px;
+	transition: 0.3s  ease-in-out;
+
+
+}
+
+.active + .item-content-acordeon{
+
+
+	max-height: 1000px;
+	padding: 10px;
+
+	opacity: 1;
+}
+.btn-itm-acordeon.active{
+
+	background: #de9002;
+}
+
+.btn-itm-acordeon:after{
+content:'\002b';
+float: right;
+
+}
+.btn-itm-acordeon.active:after{
+content:'\02212';
+float: right;
+
+
+}
+
+.teclado{
+
+
+
+	margin:0 auto;
+
+	
+}
+.teclado td button{
+
+width:70px;
+height: 70px;
+font-size: 25px;
+
+}
+
+
+
+
+.fullscreen-modal .modal-dialog {
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  width: 100%;
+}
+@media (min-width: 768px) {
+  .fullscreen-modal .modal-dialog {
+    width: 750px;
+  }
+}
+@media (min-width: 992px) {
+  .fullscreen-modal .modal-dialog {
+    width: 970px;
+  }
+}
+@media (min-width: 1200px) {
+  .fullscreen-modal .modal-dialog {
+     width: 1170px;
+  }
+}
